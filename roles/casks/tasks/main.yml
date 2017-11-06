@@ -1,0 +1,23 @@
+---
+- name: Install larger packages via brew cask 
+  homebrew_cask:
+    name: ["{{ item }}"]
+    # The list syntax on name is due to https://github.com/ansible/ansible/issues/29428
+    state: present
+  become: true
+  become_user: "{{ username_on_the_host.stdout }}"
+  become_method: "{{ sudo_password }}"
+  with_items:
+    - pycharm-ce
+    - intellij-idea-ce
+    - java
+    - docker
+    - spectacle
+    - atom
+    - iterm2
+    - spotify
+    - 1password
+    - sublime-text
+    - slack
+    - google-chrome
+    - vagrant

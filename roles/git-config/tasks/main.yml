@@ -1,0 +1,11 @@
+---
+- name: Template out global Git config
+  template: >
+    src=gitconfig.j2
+    dest=~/.gitconfig
+    mode=0644
+- name: Copy global gitignore
+  copy: >
+    src=gitignore
+    dest=~/.gitignore
+    mode=0644

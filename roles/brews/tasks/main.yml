@@ -1,0 +1,14 @@
+---
+- name: Installing packages via brew
+  homebrew:
+    name: ["{{ item }}"]
+    # The list syntax on name is due to https://github.com/ansible/ansible/issues/29428
+    state: latest
+  with_items:
+    - git
+    - python3
+    - awscli
+    - terraform
+    - go
+    - fish
+    - direnv
