@@ -4,8 +4,8 @@ A project to provision a machine running OSX for Python, Java, Go, Docker and Te
 
 ### Prerequisites
 
-Have installed Brew: `https://brew.sh/`
-Have installed Ansible: `brew install ansible`
+- Have installed Brew: `https://brew.sh/`
+- Have installed Ansible: `brew install ansible`
 
 ### Running
 
@@ -35,5 +35,5 @@ This will install the following
 
 ## Built With
 
-* [Brew](https://brew.sh/) - Package manager OSX
-* [Ansible](https://www.ansible.com/) - Configuration management tool
+- [Brew](https://brew.sh/) - Package manager OSX
+- [Ansible](https://www.ansible.com/) - Configuration management tool
