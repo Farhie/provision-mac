@@ -32,6 +32,8 @@ This will install the following
 - go
 - fish
 - direnv
+- npm
+- packer
 
 ## Built With
 
