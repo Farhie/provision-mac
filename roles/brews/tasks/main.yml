@@ -12,3 +12,5 @@
     - go
     - fish
     - direnv
+    - npm
+    - packer
