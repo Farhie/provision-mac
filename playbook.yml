@@ -9,7 +9,8 @@
     prompt: "Enter email for git commits"
     private: no
   roles:
-   - { role: whoami }
-   - { role: git-config }
    - { role: brews }
    - { role: casks }
+   - { role: git-config }
+   - { role: ssh-key }
+   - { role: fish }

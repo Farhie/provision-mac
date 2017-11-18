@@ -9,7 +9,7 @@ A project to provision a machine running OSX for Python, Java, Go, Docker and Te
 
 ### Running
 
-Once the prerequisites are met simply run './run.sh'
+Once the prerequisites are met simply run './run.sh "[INSERT_SUDO_PASSWORD_HERE]"'
 
 This will install the following
 - pycharm-ce
@@ -17,7 +17,6 @@ This will install the following
 - java
 - docker
 - spectacle
-- atom
 - iterm2
 - spotify
 - 1password
@@ -34,6 +33,12 @@ This will install the following
 - direnv
 - npm
 - packer
+
+This will configure / create
+- fish to become the default shell
+- Global .gitignore
+- Global .editorconfig file
+- New SSH key, password protected with the sudo password
 
 ## Built With
 
