@@ -9,7 +9,8 @@ A project to provision a machine running OSX for Python, Java, Go, Docker and Te
 
 ### Running
 
-Once the prerequisites are met simply run './run.sh "[INSERT_SUDO_PASSWORD_HERE]"'
+- Once the prerequisites are met simply run './run.sh "[INSERT_SUDO_PASSWORD_HERE]"'
+- Once complete run `history delete --contains "[INSERT_SUDO_PASSWORD_HERE]"` to clear any commands in your shell history that contain your password
 
 This will install the following
 - pycharm-ce

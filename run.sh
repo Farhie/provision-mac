@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
+set -e
 
-ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$1" -i HOSTS
+PASSWORD=$1
+
+ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PASSWORD" -i HOSTS
+
+exit 0

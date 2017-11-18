@@ -23,3 +23,8 @@
   lineinfile:
     path: ~/.config/fish/config.fish
     line: set -g -x PATH /usr/local/bin $PATH
+
+- name: Ensure commands starting with a space are not logged to history
+  lineinfile:
+    path: ~/.config/fish/config.fish
+    line: HISTCONTROL=ignorespace

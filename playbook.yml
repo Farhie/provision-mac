@@ -1,4 +1,4 @@
-- name: A playbook to setup new macs for dev
+- name: A playbook to setup an OSX machine for software development
   hosts: localhost
   connection: local
   vars_prompt:
