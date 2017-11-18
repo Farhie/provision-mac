@@ -2,9 +2,6 @@
   hosts: localhost
   connection: local
   vars_prompt:
-  - name: "sudo_password"
-    prompt: "Enter sudo password to allow binary install"
-    private: yes
   - name: "git_username"
     prompt: "Enter name for git commits"
     private: no

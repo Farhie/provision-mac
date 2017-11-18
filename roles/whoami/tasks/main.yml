@@ -1,4 +1,0 @@
----
-- name: Get name of current user
-  command: whoami
-  register: username_on_the_host
