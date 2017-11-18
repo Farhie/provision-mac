@@ -27,4 +27,4 @@
 - name: Ensure commands starting with a space are not logged to history
   lineinfile:
     path: ~/.config/fish/config.fish
-    line: HISTCONTROL=ignorespace
+    line: set HISTCONTROL ignorespace
