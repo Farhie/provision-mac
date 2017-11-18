@@ -1,0 +1,5 @@
+---
+- name: Copy global Editor Config
+  copy: >
+    src=.editorconfig
+    dest=~/.editorconfig

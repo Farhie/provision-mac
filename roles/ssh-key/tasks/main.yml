@@ -1,0 +1,13 @@
+---
+- name: Get name of current user
+  command: whoami
+  register: username_on_the_host
+
+- name: Create SSH key protected by sudo password
+  user:
+    name: "{{ username_on_the_host.stdout }}"
+    generate_ssh_key: yes
+    ssh_key_bits: 4096
+    ssh_key_passphrase: "{{ ansible_sudo_pass }}"
+    ssh_key_file: ~/.ssh/personal_github
+  no_log: true

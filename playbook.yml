@@ -14,3 +14,4 @@
    - { role: git-config }
    - { role: ssh-key }
    - { role: fish }
+   - { role: editor-config }
