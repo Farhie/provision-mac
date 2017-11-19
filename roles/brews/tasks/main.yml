@@ -6,6 +6,7 @@
     state: latest
   with_items:
     - git
+    - python
     - python3
     - awscli
     - terraform
