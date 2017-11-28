@@ -11,7 +11,6 @@
     - awscli
     - terraform
     - go
-    - fish
     - direnv
     - npm
     - packer
